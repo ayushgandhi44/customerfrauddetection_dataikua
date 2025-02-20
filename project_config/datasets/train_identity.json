@@ -1,0 +1,336 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 41,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1630289952145
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1630289952111
+  },
+  "tags": [],
+  "params": {
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "TransactionID",
+        "type": "string"
+      },
+      {
+        "name": "id_01",
+        "type": "string"
+      },
+      {
+        "name": "id_02",
+        "type": "string"
+      },
+      {
+        "name": "id_03",
+        "type": "string"
+      },
+      {
+        "name": "id_04",
+        "type": "string"
+      },
+      {
+        "name": "id_05",
+        "type": "string"
+      },
+      {
+        "name": "id_06",
+        "type": "string"
+      },
+      {
+        "name": "id_07",
+        "type": "string"
+      },
+      {
+        "name": "id_08",
+        "type": "string"
+      },
+      {
+        "name": "id_09",
+        "type": "string"
+      },
+      {
+        "name": "id_10",
+        "type": "string"
+      },
+      {
+        "name": "id_11",
+        "type": "string"
+      },
+      {
+        "name": "id_12",
+        "type": "string"
+      },
+      {
+        "name": "id_13",
+        "type": "string"
+      },
+      {
+        "name": "id_14",
+        "type": "string"
+      },
+      {
+        "name": "id_15",
+        "type": "string"
+      },
+      {
+        "name": "id_16",
+        "type": "string"
+      },
+      {
+        "name": "id_17",
+        "type": "string"
+      },
+      {
+        "name": "id_18",
+        "type": "string"
+      },
+      {
+        "name": "id_19",
+        "type": "string"
+      },
+      {
+        "name": "id_20",
+        "type": "string"
+      },
+      {
+        "name": "id_21",
+        "type": "string"
+      },
+      {
+        "name": "id_22",
+        "type": "string"
+      },
+      {
+        "name": "id_23",
+        "type": "string"
+      },
+      {
+        "name": "id_24",
+        "type": "string"
+      },
+      {
+        "name": "id_25",
+        "type": "string"
+      },
+      {
+        "name": "id_26",
+        "type": "string"
+      },
+      {
+        "name": "id_27",
+        "type": "string"
+      },
+      {
+        "name": "id_28",
+        "type": "string"
+      },
+      {
+        "name": "id_29",
+        "type": "string"
+      },
+      {
+        "name": "id_30",
+        "type": "string"
+      },
+      {
+        "name": "id_31",
+        "type": "string"
+      },
+      {
+        "name": "id_32",
+        "type": "string"
+      },
+      {
+        "name": "id_33",
+        "type": "string"
+      },
+      {
+        "name": "id_34",
+        "type": "string"
+      },
+      {
+        "name": "id_35",
+        "type": "string"
+      },
+      {
+        "name": "id_36",
+        "type": "string"
+      },
+      {
+        "name": "id_37",
+        "type": "string"
+      },
+      {
+        "name": "id_38",
+        "type": "string"
+      },
+      {
+        "name": "DeviceType",
+        "type": "string"
+      },
+      {
+        "name": "DeviceInfo",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

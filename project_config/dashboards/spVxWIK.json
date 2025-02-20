@@ -1,0 +1,83 @@
+{
+  "pages": [
+    {
+      "id": "gyzoIQt",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 4,
+              "left": 0,
+              "width": 8,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": true,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "View Count of Predicted Fraudulent Transaction by Average Transaction Amount",
+            "insightId": "p9V96ll",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 8,
+              "height": 4
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": true,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "View Count of Predicted Fraudulent Claims by C11",
+            "insightId": "CwIdAEH",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "sulaiha",
+  "listed": true,
+  "name": "Customer Transaction Fraud Detection\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 10,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1633423157639
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1630287430750
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": true,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": true,
+    "exportModelEvaluationStores": false,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": true,
+    "exportAllInputManagedFolders": true,
+    "exportGitRepository": false,
+    "exportInsightsData": true,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedModelEvaluationStores": [],
+    "includedManagedFolders": [],
+    "shareAllInputDatasets": false
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "byTransactionID_joined_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 13781584
+      },
+      {
+        "name": "byTransactionID_joined_prepared2",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 6408300
+      },
+      {
+        "name": "byTransactionID_joined_prepared3",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 6408300
+      },
+      {
+        "name": "byTransactionID_joined_prepared3_scored",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 3295276
+      },
+      {
+        "name": "train_identity-and-transaction_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 16577094
+      },
+      {
+        "name": "train_identity",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 26529680
+      },
+      {
+        "name": "train_transaction",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 683351067
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "i4M7ePdD",
+        "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on byTransactionID_joined_prepared3",
+        "size": 36719706
+      }
+    ],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "allAnalysisData": true,
+    "insightsData": true
+  },
+  "originalProjectKey": "CUSTOMERTRANSACTIONFRAUDDETECTION",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "9.0.1",
+  "generatedWithDSSConfVersion": "9000",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "2.1.0"
+    },
+    {
+      "pluginId": "optimization-approaches",
+      "version": "0.0.2"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "deeplearning-image",
+      "version": "2.0.2"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "amazon-comprehend-nlp-medical",
+      "version": "1.0.2"
+    },
+    {
+      "pluginId": "decision-tree-builder",
+      "version": "1.0.3"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "k8s-metrics-utils",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "tesseract-ocr",
+      "version": "1.0.1"
+    }
+  ],
+  "requiredConnections": {
+    "filesystem_managed": {
+      "name": "filesystem_managed",
+      "type": "Filesystem"
+    }
+  },
+  "usedCodeEnvRefs": [],
+  "hasPartitionedDataset": false
+}

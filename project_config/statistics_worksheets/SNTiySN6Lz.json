@@ -1,0 +1,2663 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "train_identity-and-transaction_joined",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": false,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": false,
+        "xColumns": [
+          {
+            "name": "TransactionID",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "TransactionAmt",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "isFraud",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "ProductCD",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "TransactionID",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "TransactionID",
+                  "type": "CATEGORICAL"
+                },
+                "id": "aLMyULb"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "TransactionID",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xghIkCc"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "TransactionID",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QQfmNSl"
+              }
+            ],
+            "id": "eKPrunq"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "TransactionAmt",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "id": "23N7emd"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KJ74BYI"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XJP5kry"
+              }
+            ],
+            "id": "xzMEoYS"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "isFraud",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "I9mhnvL"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "J01XM6d"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HWPpi57"
+              }
+            ],
+            "id": "6HgTXe4"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ProductCD",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "id": "v8ZXwAG"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "id": "l3A230R"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zM60Xko"
+              }
+            ],
+            "id": "EA5MaAa"
+          }
+        ],
+        "id": "GxJ8wal"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "isFraud",
+          "type": "CATEGORICAL"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": false,
+        "showSummary": false,
+        "xColumns": [
+          {
+            "name": "DeviceType",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "DeviceInfo",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "TransactionDT",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "TransactionAmt",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "ProductCD",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "DeviceType",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceType",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "eoqTYQU"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceType",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "MKFH9y9"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceType",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WWgg9n3"
+              }
+            ],
+            "id": "xLWHrJc"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "DeviceInfo",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceInfo",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NWJH8dC"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceInfo",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "jC2PeSa"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DeviceInfo",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "heaaHCg"
+              }
+            ],
+            "id": "Mgq6XQT"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "TransactionDT",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionDT",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "k1pl9ox"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionDT",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "lZI1UYo"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionDT",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "y2M33lx"
+              }
+            ],
+            "id": "iCUFnKN"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "TransactionAmt",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "I3QLBDy"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QN1g3eX"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TransactionAmt",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "i78KamG"
+              }
+            ],
+            "id": "2eHs1Sn"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ProductCD",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "VEQGdyC"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "o8M2LfV"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ProductCD",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "CcgMNwn"
+              }
+            ],
+            "id": "XTjAgh5"
+          }
+        ],
+        "id": "FYucUHl"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "isFraud",
+          "type": "CATEGORICAL"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": false,
+        "showSummary": false,
+        "xColumns": [
+          {
+            "name": "card1",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "card2",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "card3",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "card4",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "card5",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "card6",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "addr1",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "addr2",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "dist1",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "dist2",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "P_emaildomain",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "R_emaildomain",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C1",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C2",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C3",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C4",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C5",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C6",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C7",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C8",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C9",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C10",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C11",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C12",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C13",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "C14",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card1",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "TiEcWsR"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xHmmvjk"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wGEEBTe"
+              }
+            ],
+            "id": "wczQr7j"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card2",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "vCEXpzJ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "3wHcwG7"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DpO7fk6"
+              }
+            ],
+            "id": "7swJQAo"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card3",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xJJEqh3"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "vZqaQAv"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wAZObgN"
+              }
+            ],
+            "id": "SDh7Qlg"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card4",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "nsmPW2v"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ojy3aE3"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "3yDuZIH"
+              }
+            ],
+            "id": "TM7doVK"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card5",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "dVuNaSC"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "JLB96uf"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "CNOVcZH"
+              }
+            ],
+            "id": "QkOpfct"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "card6",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NUpYCpn"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "0mCoq7r"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "card6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Dwhel5w"
+              }
+            ],
+            "id": "LYtdZqF"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "addr1",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "f21q52c"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "bAwu9ld"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Rjxp83I"
+              }
+            ],
+            "id": "loW04EN"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "addr2",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "keMm91C"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "gcjalUq"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "addr2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "fYPXpZO"
+              }
+            ],
+            "id": "L9v0J7d"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "dist1",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "iSR55Pn"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "R8qCl2R"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XCsIYko"
+              }
+            ],
+            "id": "VWeP0yk"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "dist2",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "VmEAiBb"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KlNK303"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "dist2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "uubbhrF"
+              }
+            ],
+            "id": "wmbXTbb"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "P_emaildomain",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "P_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "R7yJQHp"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "P_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "uhBYQuG"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "P_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "eDUMbCr"
+              }
+            ],
+            "id": "Un41FHF"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "R_emaildomain",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "R_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "saz1H0f"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "R_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2yeOUQn"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "R_emaildomain",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Z9dkLu1"
+              }
+            ],
+            "id": "w7RgiPd"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C1",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hl7lzsR"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "OwkzQg9"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C1",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "OjNYURb"
+              }
+            ],
+            "id": "oUFAzLr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C2",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "oKLy50Q"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "p9MaWrl"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C2",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZkdG53m"
+              }
+            ],
+            "id": "JMBf6s9"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C3",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "U875fs0"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "nNNXEYt"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C3",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rB2fOFi"
+              }
+            ],
+            "id": "1z6Dm6M"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C4",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Lq2hyLN"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "fxHBb8g"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C4",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "s6RXKwV"
+              }
+            ],
+            "id": "EthFBJW"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C5",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WgdZx6D"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "FRG9nTU"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C5",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RJ0NlqI"
+              }
+            ],
+            "id": "pSIXVSr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C6",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "q6zJe18"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IcEsDl0"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C6",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "h0m2pzt"
+              }
+            ],
+            "id": "29XDmPi"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C7",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C7",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KL3F0px"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C7",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "yrmPdiX"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C7",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "PEBqHYT"
+              }
+            ],
+            "id": "qCbMb1h"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C8",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C8",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "i0ZfH65"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C8",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Vf4ukZb"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C8",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "iXdIjeh"
+              }
+            ],
+            "id": "WPbFRBS"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C9",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C9",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RugWHmZ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C9",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9ca3mAB"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C9",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "gqInYra"
+              }
+            ],
+            "id": "zr9Iecp"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C10",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C10",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tn9ckrE"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C10",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "0S86sGY"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C10",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "utMMuAd"
+              }
+            ],
+            "id": "PeASkrJ"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C11",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C11",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "uVfks6R"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C11",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "eXmnVpk"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C11",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QXJML0b"
+              }
+            ],
+            "id": "ZnKH1Pg"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C12",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C12",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ylkJFNQ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C12",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "EtcjPLj"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C12",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YRBmVON"
+              }
+            ],
+            "id": "p0ilUcY"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C13",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C13",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "OdD9Bqg"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C13",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YmNm21R"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C13",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SjT8GZz"
+              }
+            ],
+            "id": "aqRnnNy"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "C14",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C14",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ar3FisF"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C14",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tKI4nUa"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "C14",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "isFraud",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9UbC573"
+              }
+            ],
+            "id": "81K7L46"
+          }
+        ],
+        "id": "sCUWdPh"
+      }
+    ],
+    "id": "FK6jKXQ"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1630463089446
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "sulaiha"
+    },
+    "lastModifiedOn": 1630295625634
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,3843 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {},
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST",
+        "enabled": false
+      },
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "TransactionID",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "TransactionID",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "TransactionID",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_01",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_02",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_03",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_04",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_05",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_06",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_07",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_08",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_09",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_10",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_11",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_12",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_13",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_14",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_15",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_16",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_17",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_18",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_19",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_20",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_21",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_22",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_23",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_24",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_25",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_26",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_27",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_28",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_29",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_30",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_31",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_32",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_33",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_34",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_35",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_36",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_37",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "id_38",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "DeviceType",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "DeviceInfo",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "isFraud",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "TransactionDT",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "TransactionAmt",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "ProductCD",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card3",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card4",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card5",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "card6",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "addr1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "addr2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "dist1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "dist2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "P_emaildomain",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "R_emaildomain",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C3",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C4",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C5",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C6",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C7",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C8",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C9",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C10",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C11",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C12",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C13",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "C14",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V3",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V4",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V5",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V6",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V7",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V8",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V9",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V10",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V11",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V12",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V13",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V14",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V15",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V16",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V17",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V18",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V19",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V20",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V21",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V22",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V23",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V24",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V25",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V26",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V27",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V28",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V29",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V30",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V31",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V32",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V33",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V34",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V35",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V36",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V37",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V38",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V39",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V40",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V41",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V42",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V43",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V44",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V45",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V46",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V47",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V48",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V49",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V50",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V51",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V52",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V53",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V54",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V55",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V56",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V57",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V58",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V59",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V60",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V61",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V62",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V63",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V64",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V65",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V66",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V67",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V68",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V69",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V70",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V71",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V72",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V73",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V74",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V75",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V76",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V77",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V78",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V79",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V80",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V81",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V82",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V83",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V84",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V85",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V86",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V87",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V88",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V89",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V90",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V91",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V92",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V93",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V94",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V95",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V96",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V97",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V98",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V99",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V100",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V101",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V102",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V103",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V104",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V105",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V106",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V107",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V108",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V109",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V110",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V111",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V112",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V113",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V114",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V115",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V116",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V117",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V118",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V119",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V120",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V121",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V122",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V123",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V124",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V125",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V126",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V127",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V128",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V129",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V130",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V131",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V132",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V133",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V134",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V135",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V136",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V137",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V138",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V139",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V140",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V141",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V142",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V143",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V144",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V145",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V146",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V147",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V148",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V149",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V150",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V151",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V152",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V153",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V154",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V155",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V156",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V157",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V158",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V159",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V160",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V161",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V162",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V163",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V164",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V165",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V166",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V167",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V168",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V169",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V170",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V171",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V172",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V173",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V174",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V175",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V176",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V177",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V178",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V179",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V180",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V181",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V182",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V183",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V184",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V185",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V186",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V187",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V188",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V189",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V190",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V191",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V192",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V193",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V194",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V195",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V196",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V197",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V198",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V199",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V200",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V201",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V202",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V203",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V204",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V205",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V206",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V207",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V208",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V209",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V210",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V211",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V212",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V213",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V214",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V215",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V216",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V217",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V218",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V219",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V220",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V221",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V222",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V223",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V224",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V225",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V226",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V227",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V228",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V229",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V230",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V231",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V232",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V233",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V234",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V235",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V236",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V237",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V238",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V239",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V240",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V241",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V242",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V243",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V244",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V245",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V246",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V247",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V248",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V249",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V250",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V251",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V252",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V253",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V254",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V255",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V256",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V257",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V258",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V259",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V260",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V261",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V262",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V263",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V264",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V265",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V266",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V267",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V268",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V269",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V270",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V271",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V272",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V273",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V274",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V275",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V276",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V277",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V278",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V279",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V280",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V281",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V282",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V283",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V284",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V285",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V286",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V287",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V288",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V289",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V290",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V291",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V292",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V293",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V294",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V295",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V296",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V297",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V298",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V299",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V300",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V301",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V302",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V303",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V304",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V305",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V306",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V307",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V308",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V309",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V310",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V311",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V312",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V313",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V314",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V315",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V316",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V317",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V318",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V319",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V320",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V321",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V322",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V323",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V324",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V325",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V326",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V327",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V328",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V329",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V330",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V331",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V332",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V333",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V334",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V335",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V336",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V337",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V338",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "V339",
+      "type": "string",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "TransactionID",
+              "col": "id_01",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "TransactionID",
+              "col": "isFraud",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "TransactionID",
+          "col": "id_01",
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "TransactionID",
+            "type": "string"
+          },
+          {
+            "name": "id_01",
+            "type": "string"
+          },
+          {
+            "name": "id_02",
+            "type": "string"
+          },
+          {
+            "name": "id_03",
+            "type": "string"
+          },
+          {
+            "name": "id_04",
+            "type": "string"
+          },
+          {
+            "name": "id_05",
+            "type": "string"
+          },
+          {
+            "name": "id_06",
+            "type": "string"
+          },
+          {
+            "name": "id_07",
+            "type": "string"
+          },
+          {
+            "name": "id_08",
+            "type": "string"
+          },
+          {
+            "name": "id_09",
+            "type": "string"
+          },
+          {
+            "name": "id_10",
+            "type": "string"
+          },
+          {
+            "name": "id_11",
+            "type": "string"
+          },
+          {
+            "name": "id_12",
+            "type": "string"
+          },
+          {
+            "name": "id_13",
+            "type": "string"
+          },
+          {
+            "name": "id_14",
+            "type": "string"
+          },
+          {
+            "name": "id_15",
+            "type": "string"
+          },
+          {
+            "name": "id_16",
+            "type": "string"
+          },
+          {
+            "name": "id_17",
+            "type": "string"
+          },
+          {
+            "name": "id_18",
+            "type": "string"
+          },
+          {
+            "name": "id_19",
+            "type": "string"
+          },
+          {
+            "name": "id_20",
+            "type": "string"
+          },
+          {
+            "name": "id_21",
+            "type": "string"
+          },
+          {
+            "name": "id_22",
+            "type": "string"
+          },
+          {
+            "name": "id_23",
+            "type": "string"
+          },
+          {
+            "name": "id_24",
+            "type": "string"
+          },
+          {
+            "name": "id_25",
+            "type": "string"
+          },
+          {
+            "name": "id_26",
+            "type": "string"
+          },
+          {
+            "name": "id_27",
+            "type": "string"
+          },
+          {
+            "name": "id_28",
+            "type": "string"
+          },
+          {
+            "name": "id_29",
+            "type": "string"
+          },
+          {
+            "name": "id_30",
+            "type": "string"
+          },
+          {
+            "name": "id_31",
+            "type": "string"
+          },
+          {
+            "name": "id_32",
+            "type": "string"
+          },
+          {
+            "name": "id_33",
+            "type": "string"
+          },
+          {
+            "name": "id_34",
+            "type": "string"
+          },
+          {
+            "name": "id_35",
+            "type": "string"
+          },
+          {
+            "name": "id_36",
+            "type": "string"
+          },
+          {
+            "name": "id_37",
+            "type": "string"
+          },
+          {
+            "name": "id_38",
+            "type": "string"
+          },
+          {
+            "name": "DeviceType",
+            "type": "string"
+          },
+          {
+            "name": "DeviceInfo",
+            "type": "string"
+          },
+          {
+            "name": "isFraud",
+            "type": "string"
+          },
+          {
+            "name": "TransactionDT",
+            "type": "string"
+          },
+          {
+            "name": "TransactionAmt",
+            "type": "string"
+          },
+          {
+            "name": "ProductCD",
+            "type": "string"
+          },
+          {
+            "name": "card1",
+            "type": "string"
+          },
+          {
+            "name": "card2",
+            "type": "string"
+          },
+          {
+            "name": "card3",
+            "type": "string"
+          },
+          {
+            "name": "card4",
+            "type": "string"
+          },
+          {
+            "name": "card5",
+            "type": "string"
+          },
+          {
+            "name": "card6",
+            "type": "string"
+          },
+          {
+            "name": "addr1",
+            "type": "string"
+          },
+          {
+            "name": "addr2",
+            "type": "string"
+          },
+          {
+            "name": "dist1",
+            "type": "string"
+          },
+          {
+            "name": "dist2",
+            "type": "string"
+          },
+          {
+            "name": "P_emaildomain",
+            "type": "string"
+          },
+          {
+            "name": "R_emaildomain",
+            "type": "string"
+          },
+          {
+            "name": "C1",
+            "type": "string"
+          },
+          {
+            "name": "C2",
+            "type": "string"
+          },
+          {
+            "name": "C3",
+            "type": "string"
+          },
+          {
+            "name": "C4",
+            "type": "string"
+          },
+          {
+            "name": "C5",
+            "type": "string"
+          },
+          {
+            "name": "C6",
+            "type": "string"
+          },
+          {
+            "name": "C7",
+            "type": "string"
+          },
+          {
+            "name": "C8",
+            "type": "string"
+          },
+          {
+            "name": "C9",
+            "type": "string"
+          },
+          {
+            "name": "C10",
+            "type": "string"
+          },
+          {
+            "name": "C11",
+            "type": "string"
+          },
+          {
+            "name": "C12",
+            "type": "string"
+          },
+          {
+            "name": "C13",
+            "type": "string"
+          },
+          {
+            "name": "C14",
+            "type": "string"
+          },
+          {
+            "name": "V1",
+            "type": "string"
+          },
+          {
+            "name": "V2",
+            "type": "string"
+          },
+          {
+            "name": "V3",
+            "type": "string"
+          },
+          {
+            "name": "V4",
+            "type": "string"
+          },
+          {
+            "name": "V5",
+            "type": "string"
+          },
+          {
+            "name": "V6",
+            "type": "string"
+          },
+          {
+            "name": "V7",
+            "type": "string"
+          },
+          {
+            "name": "V8",
+            "type": "string"
+          },
+          {
+            "name": "V9",
+            "type": "string"
+          },
+          {
+            "name": "V10",
+            "type": "string"
+          },
+          {
+            "name": "V11",
+            "type": "string"
+          },
+          {
+            "name": "V12",
+            "type": "string"
+          },
+          {
+            "name": "V13",
+            "type": "string"
+          },
+          {
+            "name": "V14",
+            "type": "string"
+          },
+          {
+            "name": "V15",
+            "type": "string"
+          },
+          {
+            "name": "V16",
+            "type": "string"
+          },
+          {
+            "name": "V17",
+            "type": "string"
+          },
+          {
+            "name": "V18",
+            "type": "string"
+          },
+          {
+            "name": "V19",
+            "type": "string"
+          },
+          {
+            "name": "V20",
+            "type": "string"
+          },
+          {
+            "name": "V21",
+            "type": "string"
+          },
+          {
+            "name": "V22",
+            "type": "string"
+          },
+          {
+            "name": "V23",
+            "type": "string"
+          },
+          {
+            "name": "V24",
+            "type": "string"
+          },
+          {
+            "name": "V25",
+            "type": "string"
+          },
+          {
+            "name": "V26",
+            "type": "string"
+          },
+          {
+            "name": "V27",
+            "type": "string"
+          },
+          {
+            "name": "V28",
+            "type": "string"
+          },
+          {
+            "name": "V29",
+            "type": "string"
+          },
+          {
+            "name": "V30",
+            "type": "string"
+          },
+          {
+            "name": "V31",
+            "type": "string"
+          },
+          {
+            "name": "V32",
+            "type": "string"
+          },
+          {
+            "name": "V33",
+            "type": "string"
+          },
+          {
+            "name": "V34",
+            "type": "string"
+          },
+          {
+            "name": "V35",
+            "type": "string"
+          },
+          {
+            "name": "V36",
+            "type": "string"
+          },
+          {
+            "name": "V37",
+            "type": "string"
+          },
+          {
+            "name": "V38",
+            "type": "string"
+          },
+          {
+            "name": "V39",
+            "type": "string"
+          },
+          {
+            "name": "V40",
+            "type": "string"
+          },
+          {
+            "name": "V41",
+            "type": "string"
+          },
+          {
+            "name": "V42",
+            "type": "string"
+          },
+          {
+            "name": "V43",
+            "type": "string"
+          },
+          {
+            "name": "V44",
+            "type": "string"
+          },
+          {
+            "name": "V45",
+            "type": "string"
+          },
+          {
+            "name": "V46",
+            "type": "string"
+          },
+          {
+            "name": "V47",
+            "type": "string"
+          },
+          {
+            "name": "V48",
+            "type": "string"
+          },
+          {
+            "name": "V49",
+            "type": "string"
+          },
+          {
+            "name": "V50",
+            "type": "string"
+          },
+          {
+            "name": "V51",
+            "type": "string"
+          },
+          {
+            "name": "V52",
+            "type": "string"
+          },
+          {
+            "name": "V53",
+            "type": "string"
+          },
+          {
+            "name": "V54",
+            "type": "string"
+          },
+          {
+            "name": "V55",
+            "type": "string"
+          },
+          {
+            "name": "V56",
+            "type": "string"
+          },
+          {
+            "name": "V57",
+            "type": "string"
+          },
+          {
+            "name": "V58",
+            "type": "string"
+          },
+          {
+            "name": "V59",
+            "type": "string"
+          },
+          {
+            "name": "V60",
+            "type": "string"
+          },
+          {
+            "name": "V61",
+            "type": "string"
+          },
+          {
+            "name": "V62",
+            "type": "string"
+          },
+          {
+            "name": "V63",
+            "type": "string"
+          },
+          {
+            "name": "V64",
+            "type": "string"
+          },
+          {
+            "name": "V65",
+            "type": "string"
+          },
+          {
+            "name": "V66",
+            "type": "string"
+          },
+          {
+            "name": "V67",
+            "type": "string"
+          },
+          {
+            "name": "V68",
+            "type": "string"
+          },
+          {
+            "name": "V69",
+            "type": "string"
+          },
+          {
+            "name": "V70",
+            "type": "string"
+          },
+          {
+            "name": "V71",
+            "type": "string"
+          },
+          {
+            "name": "V72",
+            "type": "string"
+          },
+          {
+            "name": "V73",
+            "type": "string"
+          },
+          {
+            "name": "V74",
+            "type": "string"
+          },
+          {
+            "name": "V75",
+            "type": "string"
+          },
+          {
+            "name": "V76",
+            "type": "string"
+          },
+          {
+            "name": "V77",
+            "type": "string"
+          },
+          {
+            "name": "V78",
+            "type": "string"
+          },
+          {
+            "name": "V79",
+            "type": "string"
+          },
+          {
+            "name": "V80",
+            "type": "string"
+          },
+          {
+            "name": "V81",
+            "type": "string"
+          },
+          {
+            "name": "V82",
+            "type": "string"
+          },
+          {
+            "name": "V83",
+            "type": "string"
+          },
+          {
+            "name": "V84",
+            "type": "string"
+          },
+          {
+            "name": "V85",
+            "type": "string"
+          },
+          {
+            "name": "V86",
+            "type": "string"
+          },
+          {
+            "name": "V87",
+            "type": "string"
+          },
+          {
+            "name": "V88",
+            "type": "string"
+          },
+          {
+            "name": "V89",
+            "type": "string"
+          },
+          {
+            "name": "V90",
+            "type": "string"
+          },
+          {
+            "name": "V91",
+            "type": "string"
+          },
+          {
+            "name": "V92",
+            "type": "string"
+          },
+          {
+            "name": "V93",
+            "type": "string"
+          },
+          {
+            "name": "V94",
+            "type": "string"
+          },
+          {
+            "name": "V95",
+            "type": "string"
+          },
+          {
+            "name": "V96",
+            "type": "string"
+          },
+          {
+            "name": "V97",
+            "type": "string"
+          },
+          {
+            "name": "V98",
+            "type": "string"
+          },
+          {
+            "name": "V99",
+            "type": "string"
+          },
+          {
+            "name": "V100",
+            "type": "string"
+          },
+          {
+            "name": "V101",
+            "type": "string"
+          },
+          {
+            "name": "V102",
+            "type": "string"
+          },
+          {
+            "name": "V103",
+            "type": "string"
+          },
+          {
+            "name": "V104",
+            "type": "string"
+          },
+          {
+            "name": "V105",
+            "type": "string"
+          },
+          {
+            "name": "V106",
+            "type": "string"
+          },
+          {
+            "name": "V107",
+            "type": "string"
+          },
+          {
+            "name": "V108",
+            "type": "string"
+          },
+          {
+            "name": "V109",
+            "type": "string"
+          },
+          {
+            "name": "V110",
+            "type": "string"
+          },
+          {
+            "name": "V111",
+            "type": "string"
+          },
+          {
+            "name": "V112",
+            "type": "string"
+          },
+          {
+            "name": "V113",
+            "type": "string"
+          },
+          {
+            "name": "V114",
+            "type": "string"
+          },
+          {
+            "name": "V115",
+            "type": "string"
+          },
+          {
+            "name": "V116",
+            "type": "string"
+          },
+          {
+            "name": "V117",
+            "type": "string"
+          },
+          {
+            "name": "V118",
+            "type": "string"
+          },
+          {
+            "name": "V119",
+            "type": "string"
+          },
+          {
+            "name": "V120",
+            "type": "string"
+          },
+          {
+            "name": "V121",
+            "type": "string"
+          },
+          {
+            "name": "V122",
+            "type": "string"
+          },
+          {
+            "name": "V123",
+            "type": "string"
+          },
+          {
+            "name": "V124",
+            "type": "string"
+          },
+          {
+            "name": "V125",
+            "type": "string"
+          },
+          {
+            "name": "V126",
+            "type": "string"
+          },
+          {
+            "name": "V127",
+            "type": "string"
+          },
+          {
+            "name": "V128",
+            "type": "string"
+          },
+          {
+            "name": "V129",
+            "type": "string"
+          },
+          {
+            "name": "V130",
+            "type": "string"
+          },
+          {
+            "name": "V131",
+            "type": "string"
+          },
+          {
+            "name": "V132",
+            "type": "string"
+          },
+          {
+            "name": "V133",
+            "type": "string"
+          },
+          {
+            "name": "V134",
+            "type": "string"
+          },
+          {
+            "name": "V135",
+            "type": "string"
+          },
+          {
+            "name": "V136",
+            "type": "string"
+          },
+          {
+            "name": "V137",
+            "type": "string"
+          },
+          {
+            "name": "V138",
+            "type": "string"
+          },
+          {
+            "name": "V139",
+            "type": "string"
+          },
+          {
+            "name": "V140",
+            "type": "string"
+          },
+          {
+            "name": "V141",
+            "type": "string"
+          },
+          {
+            "name": "V142",
+            "type": "string"
+          },
+          {
+            "name": "V143",
+            "type": "string"
+          },
+          {
+            "name": "V144",
+            "type": "string"
+          },
+          {
+            "name": "V145",
+            "type": "string"
+          },
+          {
+            "name": "V146",
+            "type": "string"
+          },
+          {
+            "name": "V147",
+            "type": "string"
+          },
+          {
+            "name": "V148",
+            "type": "string"
+          },
+          {
+            "name": "V149",
+            "type": "string"
+          },
+          {
+            "name": "V150",
+            "type": "string"
+          },
+          {
+            "name": "V151",
+            "type": "string"
+          },
+          {
+            "name": "V152",
+            "type": "string"
+          },
+          {
+            "name": "V153",
+            "type": "string"
+          },
+          {
+            "name": "V154",
+            "type": "string"
+          },
+          {
+            "name": "V155",
+            "type": "string"
+          },
+          {
+            "name": "V156",
+            "type": "string"
+          },
+          {
+            "name": "V157",
+            "type": "string"
+          },
+          {
+            "name": "V158",
+            "type": "string"
+          },
+          {
+            "name": "V159",
+            "type": "string"
+          },
+          {
+            "name": "V160",
+            "type": "string"
+          },
+          {
+            "name": "V161",
+            "type": "string"
+          },
+          {
+            "name": "V162",
+            "type": "string"
+          },
+          {
+            "name": "V163",
+            "type": "string"
+          },
+          {
+            "name": "V164",
+            "type": "string"
+          },
+          {
+            "name": "V165",
+            "type": "string"
+          },
+          {
+            "name": "V166",
+            "type": "string"
+          },
+          {
+            "name": "V167",
+            "type": "string"
+          },
+          {
+            "name": "V168",
+            "type": "string"
+          },
+          {
+            "name": "V169",
+            "type": "string"
+          },
+          {
+            "name": "V170",
+            "type": "string"
+          },
+          {
+            "name": "V171",
+            "type": "string"
+          },
+          {
+            "name": "V172",
+            "type": "string"
+          },
+          {
+            "name": "V173",
+            "type": "string"
+          },
+          {
+            "name": "V174",
+            "type": "string"
+          },
+          {
+            "name": "V175",
+            "type": "string"
+          },
+          {
+            "name": "V176",
+            "type": "string"
+          },
+          {
+            "name": "V177",
+            "type": "string"
+          },
+          {
+            "name": "V178",
+            "type": "string"
+          },
+          {
+            "name": "V179",
+            "type": "string"
+          },
+          {
+            "name": "V180",
+            "type": "string"
+          },
+          {
+            "name": "V181",
+            "type": "string"
+          },
+          {
+            "name": "V182",
+            "type": "string"
+          },
+          {
+            "name": "V183",
+            "type": "string"
+          },
+          {
+            "name": "V184",
+            "type": "string"
+          },
+          {
+            "name": "V185",
+            "type": "string"
+          },
+          {
+            "name": "V186",
+            "type": "string"
+          },
+          {
+            "name": "V187",
+            "type": "string"
+          },
+          {
+            "name": "V188",
+            "type": "string"
+          },
+          {
+            "name": "V189",
+            "type": "string"
+          },
+          {
+            "name": "V190",
+            "type": "string"
+          },
+          {
+            "name": "V191",
+            "type": "string"
+          },
+          {
+            "name": "V192",
+            "type": "string"
+          },
+          {
+            "name": "V193",
+            "type": "string"
+          },
+          {
+            "name": "V194",
+            "type": "string"
+          },
+          {
+            "name": "V195",
+            "type": "string"
+          },
+          {
+            "name": "V196",
+            "type": "string"
+          },
+          {
+            "name": "V197",
+            "type": "string"
+          },
+          {
+            "name": "V198",
+            "type": "string"
+          },
+          {
+            "name": "V199",
+            "type": "string"
+          },
+          {
+            "name": "V200",
+            "type": "string"
+          },
+          {
+            "name": "V201",
+            "type": "string"
+          },
+          {
+            "name": "V202",
+            "type": "string"
+          },
+          {
+            "name": "V203",
+            "type": "string"
+          },
+          {
+            "name": "V204",
+            "type": "string"
+          },
+          {
+            "name": "V205",
+            "type": "string"
+          },
+          {
+            "name": "V206",
+            "type": "string"
+          },
+          {
+            "name": "V207",
+            "type": "string"
+          },
+          {
+            "name": "V208",
+            "type": "string"
+          },
+          {
+            "name": "V209",
+            "type": "string"
+          },
+          {
+            "name": "V210",
+            "type": "string"
+          },
+          {
+            "name": "V211",
+            "type": "string"
+          },
+          {
+            "name": "V212",
+            "type": "string"
+          },
+          {
+            "name": "V213",
+            "type": "string"
+          },
+          {
+            "name": "V214",
+            "type": "string"
+          },
+          {
+            "name": "V215",
+            "type": "string"
+          },
+          {
+            "name": "V216",
+            "type": "string"
+          },
+          {
+            "name": "V217",
+            "type": "string"
+          },
+          {
+            "name": "V218",
+            "type": "string"
+          },
+          {
+            "name": "V219",
+            "type": "string"
+          },
+          {
+            "name": "V220",
+            "type": "string"
+          },
+          {
+            "name": "V221",
+            "type": "string"
+          },
+          {
+            "name": "V222",
+            "type": "string"
+          },
+          {
+            "name": "V223",
+            "type": "string"
+          },
+          {
+            "name": "V224",
+            "type": "string"
+          },
+          {
+            "name": "V225",
+            "type": "string"
+          },
+          {
+            "name": "V226",
+            "type": "string"
+          },
+          {
+            "name": "V227",
+            "type": "string"
+          },
+          {
+            "name": "V228",
+            "type": "string"
+          },
+          {
+            "name": "V229",
+            "type": "string"
+          },
+          {
+            "name": "V230",
+            "type": "string"
+          },
+          {
+            "name": "V231",
+            "type": "string"
+          },
+          {
+            "name": "V232",
+            "type": "string"
+          },
+          {
+            "name": "V233",
+            "type": "string"
+          },
+          {
+            "name": "V234",
+            "type": "string"
+          },
+          {
+            "name": "V235",
+            "type": "string"
+          },
+          {
+            "name": "V236",
+            "type": "string"
+          },
+          {
+            "name": "V237",
+            "type": "string"
+          },
+          {
+            "name": "V238",
+            "type": "string"
+          },
+          {
+            "name": "V239",
+            "type": "string"
+          },
+          {
+            "name": "V240",
+            "type": "string"
+          },
+          {
+            "name": "V241",
+            "type": "string"
+          },
+          {
+            "name": "V242",
+            "type": "string"
+          },
+          {
+            "name": "V243",
+            "type": "string"
+          },
+          {
+            "name": "V244",
+            "type": "string"
+          },
+          {
+            "name": "V245",
+            "type": "string"
+          },
+          {
+            "name": "V246",
+            "type": "string"
+          },
+          {
+            "name": "V247",
+            "type": "string"
+          },
+          {
+            "name": "V248",
+            "type": "string"
+          },
+          {
+            "name": "V249",
+            "type": "string"
+          },
+          {
+            "name": "V250",
+            "type": "string"
+          },
+          {
+            "name": "V251",
+            "type": "string"
+          },
+          {
+            "name": "V252",
+            "type": "string"
+          },
+          {
+            "name": "V253",
+            "type": "string"
+          },
+          {
+            "name": "V254",
+            "type": "string"
+          },
+          {
+            "name": "V255",
+            "type": "string"
+          },
+          {
+            "name": "V256",
+            "type": "string"
+          },
+          {
+            "name": "V257",
+            "type": "string"
+          },
+          {
+            "name": "V258",
+            "type": "string"
+          },
+          {
+            "name": "V259",
+            "type": "string"
+          },
+          {
+            "name": "V260",
+            "type": "string"
+          },
+          {
+            "name": "V261",
+            "type": "string"
+          },
+          {
+            "name": "V262",
+            "type": "string"
+          },
+          {
+            "name": "V263",
+            "type": "string"
+          },
+          {
+            "name": "V264",
+            "type": "string"
+          },
+          {
+            "name": "V265",
+            "type": "string"
+          },
+          {
+            "name": "V266",
+            "type": "string"
+          },
+          {
+            "name": "V267",
+            "type": "string"
+          },
+          {
+            "name": "V268",
+            "type": "string"
+          },
+          {
+            "name": "V269",
+            "type": "string"
+          },
+          {
+            "name": "V270",
+            "type": "string"
+          },
+          {
+            "name": "V271",
+            "type": "string"
+          },
+          {
+            "name": "V272",
+            "type": "string"
+          },
+          {
+            "name": "V273",
+            "type": "string"
+          },
+          {
+            "name": "V274",
+            "type": "string"
+          },
+          {
+            "name": "V275",
+            "type": "string"
+          },
+          {
+            "name": "V276",
+            "type": "string"
+          },
+          {
+            "name": "V277",
+            "type": "string"
+          },
+          {
+            "name": "V278",
+            "type": "string"
+          },
+          {
+            "name": "V279",
+            "type": "string"
+          },
+          {
+            "name": "V280",
+            "type": "string"
+          },
+          {
+            "name": "V281",
+            "type": "string"
+          },
+          {
+            "name": "V282",
+            "type": "string"
+          },
+          {
+            "name": "V283",
+            "type": "string"
+          },
+          {
+            "name": "V284",
+            "type": "string"
+          },
+          {
+            "name": "V285",
+            "type": "string"
+          },
+          {
+            "name": "V286",
+            "type": "string"
+          },
+          {
+            "name": "V287",
+            "type": "string"
+          },
+          {
+            "name": "V288",
+            "type": "string"
+          },
+          {
+            "name": "V289",
+            "type": "string"
+          },
+          {
+            "name": "V290",
+            "type": "string"
+          },
+          {
+            "name": "V291",
+            "type": "string"
+          },
+          {
+            "name": "V292",
+            "type": "string"
+          },
+          {
+            "name": "V293",
+            "type": "string"
+          },
+          {
+            "name": "V294",
+            "type": "string"
+          },
+          {
+            "name": "V295",
+            "type": "string"
+          },
+          {
+            "name": "V296",
+            "type": "string"
+          },
+          {
+            "name": "V297",
+            "type": "string"
+          },
+          {
+            "name": "V298",
+            "type": "string"
+          },
+          {
+            "name": "V299",
+            "type": "string"
+          },
+          {
+            "name": "V300",
+            "type": "string"
+          },
+          {
+            "name": "V301",
+            "type": "string"
+          },
+          {
+            "name": "V302",
+            "type": "string"
+          },
+          {
+            "name": "V303",
+            "type": "string"
+          },
+          {
+            "name": "V304",
+            "type": "string"
+          },
+          {
+            "name": "V305",
+            "type": "string"
+          },
+          {
+            "name": "V306",
+            "type": "string"
+          },
+          {
+            "name": "V307",
+            "type": "string"
+          },
+          {
+            "name": "V308",
+            "type": "string"
+          },
+          {
+            "name": "V309",
+            "type": "string"
+          },
+          {
+            "name": "V310",
+            "type": "string"
+          },
+          {
+            "name": "V311",
+            "type": "string"
+          },
+          {
+            "name": "V312",
+            "type": "string"
+          },
+          {
+            "name": "V313",
+            "type": "string"
+          },
+          {
+            "name": "V314",
+            "type": "string"
+          },
+          {
+            "name": "V315",
+            "type": "string"
+          },
+          {
+            "name": "V316",
+            "type": "string"
+          },
+          {
+            "name": "V317",
+            "type": "string"
+          },
+          {
+            "name": "V318",
+            "type": "string"
+          },
+          {
+            "name": "V319",
+            "type": "string"
+          },
+          {
+            "name": "V320",
+            "type": "string"
+          },
+          {
+            "name": "V321",
+            "type": "string"
+          },
+          {
+            "name": "V322",
+            "type": "string"
+          },
+          {
+            "name": "V323",
+            "type": "string"
+          },
+          {
+            "name": "V324",
+            "type": "string"
+          },
+          {
+            "name": "V325",
+            "type": "string"
+          },
+          {
+            "name": "V326",
+            "type": "string"
+          },
+          {
+            "name": "V327",
+            "type": "string"
+          },
+          {
+            "name": "V328",
+            "type": "string"
+          },
+          {
+            "name": "V329",
+            "type": "string"
+          },
+          {
+            "name": "V330",
+            "type": "string"
+          },
+          {
+            "name": "V331",
+            "type": "string"
+          },
+          {
+            "name": "V332",
+            "type": "string"
+          },
+          {
+            "name": "V333",
+            "type": "string"
+          },
+          {
+            "name": "V334",
+            "type": "string"
+          },
+          {
+            "name": "V335",
+            "type": "string"
+          },
+          {
+            "name": "V336",
+            "type": "string"
+          },
+          {
+            "name": "V337",
+            "type": "string"
+          },
+          {
+            "name": "V338",
+            "type": "string"
+          },
+          {
+            "name": "V339",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      },
+      "validated": true,
+      "fullyTranslated": false,
+      "ok": false,
+      "message": "Filter expression is invalid"
+    },
+    "enabled": false
+  },
+  "enableAutoCastInJoinConditions": false
+}
